@@ -1,0 +1,43 @@
+h1 {
+    background-color: #DDE0E3;
+    padding: 50px;
+    border-bottom: 1px solid #5D6063;
+}
+
+p {
+    padding: 20px 0 20px 10px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    background-color: darkslategrey;
+    margin-bottom: 50px;
+}
+
+body {
+    text-align: center;
+}
+
+em,
+strong {
+    background-color: #B2D6FF;
+    display: inline;
+    padding: 50px;
+}
+
+div {
+    color: #FFF;
+    background-color: #1c6ab8;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #5D6063;
+    border-radius: 5px;
+    width: 200px;
+    box-sizing: border-box;
+    margin: 20px auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
