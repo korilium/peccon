@@ -1,0 +1,44 @@
+
+
+@import "styles.css";
+
+body {
+    background-color:#001510;;
+    color: #9abbb3;
+    clear: both;
+    overflow: hidden;
+}
+
+h1 {
+    color: #033d30;
+}
+
+h2, h3 {
+    color: #033d30;
+    float:left;
+    margin-top: 50px;
+    width: 4000px
+}
+hr {
+    border: 1px solid #033d30;
+
+}
+
+
+.description {
+    float: left;
+
+}
+
+.input {
+    float: right;
+    margin-right: -1px; /* Thank you IE */
+
+    margin-bottom: -500em;
+    width: 400px;
+}
+
+.jobs {
+    clear: both;
+   
+}

@@ -1,6 +1,5 @@
 {
     "dataworkspace.excludedProjects": [
         "data/Pecon/Pecon.sqlproj"
-    ],
-    "julia.environmentPath": "c:\\Users\\ignac\\Documents\\GitHub\\pecon\\website\\peccon1"
+    ]
 }
