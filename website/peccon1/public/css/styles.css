@@ -2,9 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #001510;
     color: #9abbb3;
+
 }
+
+
 
 .page {
     width: 1200px;
@@ -13,7 +15,7 @@
 
 a:link,
 a:visited {
-    color: #033d30;
+    color: #04f3bfb9;
     text-decoration: none;
 }
 
@@ -85,4 +87,5 @@ ul {
     clear: both;
     height: 60px;
     background-color: #033d30;
+    display: flex;
 }
