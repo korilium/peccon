@@ -1,5 +1,6 @@
 {
     "dataworkspace.excludedProjects": [
         "data/Pecon/Pecon.sqlproj"
-    ]
+    ],
+    "julia.environmentPath": "/home/korilium/Documents/GitHub/pecon/website/peccon"
 }
