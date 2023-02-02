@@ -1,0 +1,4 @@
+name = "peccon"
+uuid = "3b9b85be-934b-4e71-a714-2e0b9268fba9"
+authors = ["korilium <73854608+korilium@users.noreply.github.com>"]
+version = "0.1.0"
