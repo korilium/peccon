@@ -7,11 +7,6 @@ using AlphaVantage,
      IterTools, 
      Plots
 
-
- Ticker = ["SPY", "ADAEUR", "VWCE.DE", "EUNH.DE", "GUNR", 
-            #"VNQ"
-            ]
-
 function fin_data(Tickers, days= 500, clientKey = "0VS2G38H6PKP03GX" )
 
     #extract the data 
@@ -26,9 +21,6 @@ function fin_data(Tickers, days= 500, clientKey = "0VS2G38H6PKP03GX" )
     end 
     return portfolio
 end 
-
-
-portfolio = fin_data( Ticker)
 
 function calc_returns(portfolio)
     #calculate returns for each stock 
@@ -53,15 +45,11 @@ function calc_returns(portfolio)
     return port_returns
 end 
 
-
-port_returns = calc_returns(portfolio)
-
 #= 
 make random allocation on weights to see the trade-off between risk and return 
 Next plot all possible allocation to see total impact
 In the end find optimal risk return combination  
 =# 
-
 function mpt(returns, simulations= 5000 )
 
     names_stock= names(port_returns)
@@ -116,8 +104,6 @@ function sharp_ration(port_sim, rf = 0.02)
     return sort!(port_sim, :sharp_ratio)
 end 
 
-sharp_ration(port_sim)
-
 #utility function σ² - qE(Rₚ)
 function utility_mpt(port_sim, q = 0 )
 
@@ -125,4 +111,3 @@ function utility_mpt(port_sim, q = 0 )
     return sort!(port_sim,:utility)
 end 
 
-utility_mpt(port_sim)
