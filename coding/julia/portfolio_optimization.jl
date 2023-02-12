@@ -5,7 +5,8 @@ using AlphaVantage,
      Statistics, 
      Distributions, 
      IterTools, 
-     Plots
+     Plots,
+     CSV
 
 function fin_data(Tickers, days= 500, clientKey = "0VS2G38H6PKP03GX" )
 
@@ -17,10 +18,15 @@ function fin_data(Tickers, days= 500, clientKey = "0VS2G38H6PKP03GX" )
     for i in Tickers 
         asset = DataFrame(time_series_daily_adjusted( i, outputsize= "full"))
         asset = asset[1:days,:]
+        asset[!,"ticker"] .= i 
         push!(portfolio, asset)
     end 
     return portfolio
 end 
+
+data = fin_data(["ADAEUR"])
+
+ada = data[1]
 
 function calc_returns(portfolio)
     #calculate returns for each stock 
