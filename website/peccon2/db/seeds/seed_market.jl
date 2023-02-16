@@ -8,7 +8,7 @@ Base.convert(::Type{Int}, s::String) = parse(Int, s)
 
 function seed()
     for row in CSV.File(joinpath(@__DIR__, "ADAEUR.csv"), limit= 500)
-        m = Mpt()
+        m = Market()
 
         m.ticker = row.ticker
         m.timestamp = row.timestamp 

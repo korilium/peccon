@@ -1,13 +1,13 @@
-module CreateTableMpts
+module CreateTableMarkets
 
 import SearchLight.Migrations: create_table, column, columns, pk, add_index, drop_table, add_indices
 
 function up()
-  create_table(:mpts) do
+  create_table(:markets) do
     [
       pk()
       column(:ticker, :string, limit=10) 
-      column(:timestamp, :string, limit = 30)
+      column(:timestamp, :date)
       column(:open, :float)
       column(:high, :float)
       column(:low, :float)
@@ -19,11 +19,11 @@ function up()
     ]
   end
 
-  add_indices(:mpts, :ticker, :timestamp)
+  add_indices(:markets, :ticker, :timestamp)
 end
 
 function down()
-  drop_table(:mpts)
+  drop_table(:markets)
 end
 
 end

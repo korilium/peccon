@@ -1,12 +1,12 @@
-module Mpts
+module Markets
 
 import SearchLight: AbstractModel, DbId
 import Base: @kwdef
 import Dates: Date 
 
-export Mpt
+export Market
 
-@kwdef mutable struct Mpt <: AbstractModel
+@kwdef mutable struct Market <: AbstractModel
   id::DbId = DbId()
   ticker::String = ""
   timestamp::Date = Date(1531,1,1)
