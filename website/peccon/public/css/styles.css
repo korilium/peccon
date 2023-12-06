@@ -6,7 +6,9 @@
 
 }
 
-
+body {
+    font-family: Helvetica, Arial, Sans-Serif;
+  }
 
 .page {
     width: 1200px;

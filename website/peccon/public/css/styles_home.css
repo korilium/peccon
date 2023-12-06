@@ -6,9 +6,6 @@
 body{
     background-color: black;
 }
-.content {
-    height: 3000px;
-}
 
 .person {
     position: relative;
@@ -42,7 +39,7 @@ body{
     width: 60px;
     height: 2px;
     top: 50%;
-    right: 34%;
+    right: 33%;
     background: #9abbb3;
     position: absolute;
 }
@@ -73,32 +70,23 @@ body{
     border-width: 0;
     height: 2px;
     background-image: linear-gradient(90deg, #f9a602ff, transparent);
-    transform: rotate(350deg);
+    transform: rotate(347deg);
     width: 100%;
     z-index: 1;
 }
 
-.connector::after {
-    content: '';
-    position: relative;
-    height: 15px;
-    width: 15px;
-    border: 2px solid #f9a602ff;
-    background-color: #033d30;
-    border-radius: 50%;
-    top: 50%;
-    right: 98%;
-    z-index: 2
-}
+
 
 .corners {
     background-image: linear-gradient(180deg, #033d30, transparent);
     margin-left: 0px;
+    text-align: center;
     height: 200px;
     float: left;
     width: 200px;
     border-top: 2px solid #f9a602ff;
     z-index: 3;
+    padding: 70px 0;
 }
 
 .description {
@@ -107,7 +95,8 @@ body{
     height: 200px;
     width: 800px;
     border-top: 2px solid #f9a602ff;
-    padding: 1px;
+    padding: 70px 0;
+    text-align: center;
 }
 
 .connector1 {
@@ -130,18 +119,7 @@ body{
     z-index: 1;
 }
 
-.connector1::after {
-    content: '';
-    position: relative;
-    height: 15px;
-    width: 15px;
-    border: 2px solid #f9a602ff;
-    background-color: #033d30;
-    border-radius: 50%;
-    top: 50%;
-    right: 22%;
-    z-index: 2;
-}
+
 
 .example_lc {
     background-image: linear-gradient(180deg, #033d30, transparent);
@@ -151,6 +129,8 @@ body{
     border-top: 2px solid #f9a602ff;
     z-index: 2;
     margin-bottom: 10px;
+    padding: 70px 0;
+    text-align: center;
 }
 
 .connector2 {
@@ -164,28 +144,17 @@ body{
     align-items: center;
     margin-right: 10%;
     margin-bottom: 1%;
-    z-index: 2;
+    z-index: 0;
+
 }
 
-.connector2::after {
-    content: ' ';
-    position: relative;
-    height: 15px;
-    width: 15px;
-    border: 2px solid #f9a602ff;
-    background-color: #033d30;
-    border-radius: 50%;
-    top: 100%;
-    left: -6%;
-    z-index: 2;
-}
 
 .gradient2 {
     border-width: 0;
     height: 2px;
-    background-image: linear-gradient(355deg, #f9a602ff, transparent);
-    transform: rotate(24deg);
-    width: 90%;
+    background-image: linear-gradient(200deg, #f9a602ff, transparent);
+    transform: rotate(27deg);
+    width: 100%;
     z-index: 1;
 }
 
@@ -198,6 +167,8 @@ body{
     width: 200px;
     border-top: 2px solid #f9a602ff;
     z-index: 3;
+    padding: 70px 0;
+    text-align: center;
 }
 
 .description1 {
@@ -209,6 +180,8 @@ body{
     border-top: 2px solid #f9a602ff;
     padding: 1px;
     z-index: 3;
+    padding: 70px 0;
+    text-align: center;
 }
 
 
