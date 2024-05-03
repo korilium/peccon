@@ -1,3 +1,5 @@
 [deps]
 Genie = "c43c736e-a2d1-11e8-161f-af95117fbd1e"
 GenieFramework = "a59fdf5c-6bf0-4f5d-949c-a137c9e2f353"
+Peccon = "f5b9415a-ee94-4c1d-9f36-779b616d2866"
+StatsPlots = "f3b207a7-027a-5e70-b257-86293d7955fd"

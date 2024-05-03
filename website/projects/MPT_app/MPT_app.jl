@@ -2,7 +2,7 @@ using Pkg
 Pkg.activate("website/projects/MPT_app/MPT_app")
 
 
-using Genie
+using Genie, Peccon
 
 
 route("/hello") do 
