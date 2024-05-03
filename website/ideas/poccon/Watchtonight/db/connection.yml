@@ -1,6 +1,0 @@
-env: ENV["GENIE_ENV"]
-
-dev:
-  adapter:  SQLite
-  database: db/netflix_catalog.sqlite3
-  config: 
