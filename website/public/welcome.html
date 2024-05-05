@@ -10,45 +10,86 @@
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".side-menu">
+    <div id="dot-container"></div>
     <div class='header'>
-        <img class="logo" src="img/logo.svg" alt="peccon logo">
-        <div class="brand name"> PECCON </div>
+        <img class="logo" src="img/logoBackground.svg" alt="peccon logo">
+        <div class="brand"> PECCON </div>
         <ul class="menu">
             <li> <a href="welcome.html"> Home</a></li>
-            <li>Login</li>
-            <li>Model</li>
+            <li>Profile</li>
+            <li>Journey</li>
             <li>Community</li>
+            <li>Products</li>
             <li> <a href="about.html"> About</a></li>
         </ul>
     </div>
     <div class="page">
         <div class="content">
             <img class="person" src="img/logosmall.svg" alt="icon of consumer">
-            <div class="intro_text">Start your journey here</div>
+            <div class="intro_text"> Start your journey here </div>
             <div class="introduction">
                 <div class="connector">
-                    <hr class="gradient">
                 </div>
-                <div class="corners"> <b>learn to plan</b></div>
-                <div class="description"> Learning to plan your financial situation is an important aspect in life . </div>
-                <div class="connector1">
-                    <hr class="gradient1">
-                </div>
-                <div class="example_lc"> example1</div>
-                <div class="connector2">
-                    <hr class="gradient2">
-                </div>
-                <div class="corners1"> building models </div>
-                <div class="description1">what to do. What to know</div>
-                <div class="connector1">
-                    <hr class="gradient1">
-                </div>
-                <div class="example_lc"> example1</div>
 
+                <button class ="step" onclick="toggleElements('elements1')"> 1
+                </button>
+
+                    <div class="connector1">
+                    </div>
+                    <div  class="corners"> <b>Learn to plan financially</b>
+                    </div>
+                    <div  class="connector2">
+                    </div>
+                    <div  class="connector3">
+                        <hr class="Vline">
+                    </div>
+                    <div class="description"> Become a financial expert by learning theoretical concepts and
+                        doing exercises in the field of finance. In return you earn tokens that enable you to unlock
+                        more resources. </div>
+
+
+                <div class="connector"></div>
+
+
+                <button class="step" onclick="toggleElements('group2')"> 2
+                </button>
+                <div id="group2" class="hidden-group">
+                    <div class="connector1">
+                    </div>
+                    <div class="corners"> <b>model investment decisions</b>
+                    </div>
+                    <div class="connector2">
+                    </div>
+                    <div class="connector3">
+                        <hr class="Vline">
+                    </div>
+                    <div class="description"> Get access to financial planning tools through tokens </div>
+                </div>
+                <div class="connector"></div>
+
+                
+                <div class="step"> 3
+                </div>
+                <div class="connector1">
+                </div>
+                <div class="corners"> <b>use community driven investment products</b>
+                </div>
+                <div class="connector2">
+                </div>
+                <div class="connector3">
+                    <hr class="Vline">
+                </div>
+                <div class="description"> investment products which are build by and for the community. Giving you a
+                    higher return with a social goal in mind </div>
+                <div class="connector">
+
+                </div>
             </div>
         </div>
-        <footer class="footer">Footer</footer>
-    </div>
+
+        <script src="js/background.js"></script>
+        <script src="js/appear.js"></script>
+
 </body>
 
 </html>

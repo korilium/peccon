@@ -7,6 +7,7 @@ body{
     background-color: black;
 }
 
+
 .person {
     position: relative;
     left: 500px;
@@ -55,108 +56,137 @@ body{
 
 .connector {
     margin-left: 100px;
-    margin-right: 400px;
+    margin-right: 600px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100% 100%, auto;
     height: 100px;
-    width: 550px;
+    width: 850px;
     flex: 0 0 42%;
     display: flex;
     align-items: center;
+    z-index:2;
 }
 
-.gradient {
-    border-width: 0;
-    height: 2px;
-    background-image: linear-gradient(90deg, #f9a602ff, transparent);
-    transform: rotate(347deg);
-    width: 100%;
+.step {
+    background-color: #02271f;
+    border: 2px solid;
+    margin-left: 100px;
+    height: 140px;
+    float: left;
+    width: 140px; /* Equal width and height for a perfect circle */
+    border-radius: 50%; /* Sets border radius to 50% of the width, making it a circle */
     z-index: 1;
+    position: relative;
+    text-align: center;
+    font-size: 24px; 
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    padding: 57px;
+    margin-top: 50px; 
+    cursor: pointer; /* Change cursor to pointer to indicate clickable element */
 }
+
 
 
 
 .corners {
-    background-image: linear-gradient(180deg, #033d30, transparent);
+    background-color: #02271f;
+    border: 2px solid ;
     margin-left: 0px;
     text-align: center;
-    height: 200px;
+    height: 140px;
     float: left;
-    width: 200px;
-    border-top: 2px solid #f9a602ff;
+    width: 450px;
+    border-radius: 20px;
     z-index: 3;
-    padding: 70px 0;
+    padding: 60px 0;
+    margin-top: 50px;
 }
 
-.description {
-    background-image: linear-gradient(180deg, #033d30, transparent);
-    margin-left: 0px;
-    height: 200px;
-    width: 800px;
-    border-top: 2px solid #f9a602ff;
-    padding: 70px 0;
-    text-align: center;
-}
 
 .connector1 {
     margin-left: 0px;
     background-repeat: no-repeat;
     background-position: right;
-    height: 170px;
-    flex: 0 0 42%;
+    height: 140px;
+    flex: 0 0 32%;
     display: flex;
     align-items: center;
-    margin-right: 20%;
+    margin-top: 50px;
+    width: 200px;
 }
 
-.gradient1 {
-    border-width: 0;
-    height: 2px;
-    background-image: linear-gradient(280deg, #f9a602ff, transparent);
-    transform: rotate(90deg);
-    width: 40%;
-    z-index: 1;
-}
-
-
-
-.example_lc {
-    background-image: linear-gradient(180deg, #033d30, transparent);
-    margin-left: 0px;
-    height: 300px;
-    width: 1000px;
-    border-top: 2px solid #f9a602ff;
-    z-index: 2;
-    margin-bottom: 10px;
-    padding: 70px 0;
-    text-align: center;
-}
 
 .connector2 {
     margin-left: 20px;
     background-repeat: no-repeat;
     background-position: right;
     height: 100px;
-    width: 1%;
+    width: 10%;
+    flex: 0 0 32%;
+    display: flex;
+    align-items: center;
+    z-index: 0;
+
+}
+
+.connector3 {
+    margin-left: 250px;
+    margin-bottom: 0px;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100px;
     flex: 0 0 42%;
     display: flex;
     align-items: center;
-    margin-right: 10%;
-    margin-bottom: 1%;
     z-index: 0;
 
 }
 
 
-.gradient2 {
+
+.Vdotted {
     border-width: 0;
-    height: 2px;
-    background-image: linear-gradient(200deg, #f9a602ff, transparent);
-    transform: rotate(27deg);
-    width: 100%;
-    z-index: 1;
+    margin-left: 150px;
+    height: 100%;
+    background-image: repeating-linear-gradient(0deg, transparent, transparent 6px, #9abbb3 4px, #9abbb3 10px);
+    width: 2px;
+    text-align: center;
 }
+
+.Vline{
+    border-width: 0;
+    margin-left: 150px;
+    height: 100%;
+    background-color: #9abbb3;
+    width: 2px;
+    text-align: center;
+}
+
+
+
+
+
+
+.description {
+    background-color: #02271f;
+    border-radius: 20px;
+    border: 2px solid ;
+    margin-left: 0px;
+    text-align: center;
+    height: 140px;
+    width: 1200px;
+    border-top: 2px solid #9abbb3;
+    z-index: 2;
+    margin-bottom: 10px;
+    padding: 55px 0;
+    text-align: center;
+}
+
+
+
+
 
 .corners1 {
     background-image: linear-gradient(180deg, #033d30, transparent);
@@ -165,7 +195,7 @@ body{
     height: 200px;
     float: left;
     width: 200px;
-    border-top: 2px solid #f9a602ff;
+    border-top: 2px solid #9abbb3;
     z-index: 3;
     padding: 70px 0;
     text-align: center;
@@ -177,7 +207,7 @@ body{
     margin-top: 150px;
     height: 200px;
     width: 800px;
-    border-top: 2px solid #f9a602ff;
+    border-top: 2px solid #9abbb3;
     padding: 1px;
     z-index: 3;
     padding: 70px 0;
@@ -185,58 +215,32 @@ body{
 }
 
 
-.gradient3 {
-    border-width: 0px;
-    height: 2px;
-    background-image: linear-gradient(355deg, #f9a602ff, transparent);
-    transform: rotate(24deg);
-    width: 300px;
-    z-index: 1;
-    margin-left: 200px;
+
+#dot-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Cover entire viewport horizontally */
+    height: 100vh; /* Cover entire viewport vertically */
+    z-index: -1; /* Ensure dots are behind other content */
 }
-.connector3 {
-    background-repeat: no-repeat;
-    background-position: left;
-    height: 100px;
-    width: 100px;
-    flex: 0 0 42%;
-    display: flex;
-    align-items: center;
-    margin-right: 0%;
-    margin-bottom: 1%;
+
+.dot {
+    position: absolute;
+    background-color: #9abbb3;/* Dot color */
+    width: 4px; /* Dot width */
+    height: 4px; /* Dot height */
+    border-radius: 50%; /* Make dots round */
+    opacity: 0; /* Initially invisible */
+}
+
+.hidden-group {
+    display: none; /* Initially hide the group */
     z-index: 2;
 }
 
-.connector3::after {
-    content: '';
-    position: relative;
-    height: 15px;
-    width: 15px;
-    border: 2px solid #f9a602ff;
-    background-color: #033d30;
-    border-radius: 50%;
-    top: 60%;
-    right: 5%;
-    z-index: 2;
+.visible {
+    display: block !important; /* Ensure visibility overrides */
 }
 
 
-.corners2 {
-    background-image: linear-gradient(180deg, #033d30, transparent);
-    margin-top: 150px;
-    height: 200px;
-    float: left;
-    width: 200px;
-    border-top: 2px solid #f9a602ff;
-    z-index: 3;
-}
-
-.description2 {
-    background-image: linear-gradient(180deg, #033d30, transparent);
-    margin-left: 0px;
-    margin-top: 150px;
-    height: 200px;
-    border-top: 2px solid #f9a602ff;
-    padding: 1px;
-    z-index: 3;
-}
