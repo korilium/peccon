@@ -1,0 +1,55 @@
+
+@import "styles.css";
+
+
+body{
+    background-color: black;
+}
+
+
+.person {
+    position: relative;
+    left: 500px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.intro_text {
+    height: fit-content;
+    text-align: center;
+    font-size: 26px;
+    position: relative;
+}
+
+.intro_text:before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    top: 50%;
+    left: 34%;
+    background: #9abbb3;
+    position: absolute;
+}
+
+.intro_text:after {
+    content: " ";
+    display: block;
+    width: 60px;
+    height: 2px;
+    top: 50%;
+    right: 33%;
+    background: #9abbb3;
+    position: absolute;
+}
+
+.journey {
+    margin-top: 5px;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    flex-direction: row;
+}

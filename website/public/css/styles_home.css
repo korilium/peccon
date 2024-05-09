@@ -73,6 +73,7 @@ body{
     --b: 3px;   /* border thickness */
     --s: .45em; /* size of the corner */
     --color: #9abbb3; /* color of the button */
+    margin-left: 100px;
 
     /* Padding for the button */
     padding: calc(.5em + var(--s)) calc(.9em + var(--s));
