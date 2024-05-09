@@ -1,48 +1,24 @@
-
-I apologize for the oversight. It seems there's an issue with the code. Let's correct it. Ensure the Markdown file path is correct and that your browser allows fetching local files (if you're fetching from the local file system). Here's the corrected code:
-
-HTML:
-
-html
-Copy code
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang='en'>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Render Markdown on Button Click</title>
+    <meta charset='utf-8'>
+    <title>Websockets are awesome</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
+            font-family: sans-serif;
+            height: 100vh;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        input {
+            margin: 4px 0;
         }
     </style>
 </head>
 <body>
-    <button id="renderButton">Render Markdown</button>
-    <div id="markdownContent"></div>
-
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script>
-        document.getElementById('renderButton').addEventListener('click', function() {
-            // Fetch the Markdown content from the file
-            fetch('fundamental_understanding_intuition.md')
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Failed to fetch Markdown file');
-                    }
-                    return response.text();
-                })
-                .then(text => {
-                    // Convert Markdown to HTML using Marked.js
-                    const html = marked(text);
-                    // Render the HTML content to the page
-                    document.getElementById('markdownContent').innerHTML = html;
-                })
-                .catch(error => {
-                    console.error('Error:', error.message);
-                });
-        });
-    </script>
-</body>
-</html>
+    <form onsubmit='event.preventDefault(); sendcommand();'>
+        <label>Enter a Julia command:</label><br>
+        <input
