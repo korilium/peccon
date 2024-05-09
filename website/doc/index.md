@@ -1,4 +1,4 @@
-@def title = "Franklin Example"
+@def title = "Fundamenetal Understanding of Financial Theory"
 @def tags = ["syntax", "code"]
 
 # How to use Franklin

@@ -3,7 +3,6 @@ small alterations for Franklin
 */
 h1.page.title,
 hr {
-  position relative
   padding-left: 12.5%;
   padding-right: 12.5%;
   line-height: 1.35em;
@@ -1296,13 +1295,13 @@ a.pure-button-selected {
   display: block;
   padding: 13px 15px;
   transition: all 0.2s ease-in-out;
-  color: #adb5bd;
+  color: #9abbb3;
   outline-width: 0;
 }
 
 .sidebar-nav .metismenu ul > li {
   padding-left: 1px;
-  border-left: 3px solid #2579c7c2;
+  border-left: 3px solid #9abbb3;
   background: rgba(255, 255, 255, 0.05);
 }
 
@@ -1315,11 +1314,11 @@ a.pure-button-selected {
 .sidebar-nav .metismenu a:hover {
   text-decoration: none;
   color: #f8f9fa;
-  background: #2579c7c2;
+  background: #9abbb3;
 }
 
 .sidebar-nav .metismenu a[aria-expanded=true] {
-  background-color: #2579c7c2;
+  background-color: #9abbb3;
 }
 
 .sidebar-brand {
@@ -2524,7 +2523,7 @@ h3 {
 
 a {
   text-decoration: none;
-  color: #2579c7;
+  color: #9abbb3;
 }
 
 strong {
@@ -2540,7 +2539,7 @@ strong {
 
 .content a {
   text-decoration: none;
-  color: #2579c7;
+  color: #9abbb3;
 }
 
 .flex-container {
@@ -2550,7 +2549,7 @@ strong {
 hr {
   height: 0;
   border: 0;
-  box-shadow: 0 0 5px 1px #2579c7;
+  box-shadow: 0 0 5px 1px #9abbb3;
 }
 
 hr::after {
