@@ -51,7 +51,8 @@ body{
     flex-flow: wrap row;
     justify-content: flex-start;
     align-items: stretch;
-    align-content: center;
+    align-content: flex-start;
+    flex-direction: row;
 }
 
 .connector {
@@ -237,10 +238,12 @@ body{
 .hidden-group {
     display: none; /* Initially hide the group */
     z-index: 2;
+    
 }
 
 .visible {
-    display: block !important; /* Ensure visibility overrides */
+    display: flex !important; /* Ensure visibility overrides */
+    flex-direction: column;
 }
 
 
