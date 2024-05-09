@@ -13,7 +13,7 @@ function createRandomDots() {
 }
 
 function fadeInOut(dot) {
-    const duration = Math.random() * 20000 + 15000; // Random duration between 5 and 13 seconds
+    const duration = Math.random() * 20000 +15000; // Random duration between 5 and 13 seconds
     const delay = Math.random() * 10000; // Random delay up to 10 seconds
     const fadeOutStart = duration - 1000; // Start fading out 1 second before the end
 
