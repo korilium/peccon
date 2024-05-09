@@ -70,63 +70,12 @@ body{
 }
 
 .step {
-    --b: 3px;   /* border thickness */
-    --s: .45em; /* size of the corner */
-    --color: #9abbb3; /* color of the button */
     margin-left: 100px;
 
-    /* Padding for the button */
-    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+   
     width: 130px;
-    /* Color of the text within the button */
-    color: var(--color);
-    
-    /* Set the corner size */
-    --_p: var(--s);
-    
-    /* Background style using a conic gradient */
-    background:
-        conic-gradient(from 90deg at var(--b) var(--b), #0000 90deg, var(--color) 0)
-        var(--_p) var(--_p)/calc(100% - var(--b) - 2 * var(--_p)) calc(100% - var(--b) - 2 * var(--_p));
-    
-    /* Define transition effects */
-    transition: .3s linear, color 0s, background-color 0s;
-    
-    /* Define an outline around the button */
-    outline: var(--b) solid #0000;
-    
-    /* Set font size and text alignment */
-    font-size: 16px;
-    text-align: center;
-    font-weight: bold;
-    
-    /* Remove border */
-    border: 0;
-    
 
-    /* Disable text selection and specify touch behavior */
-    -webkit-user-select: none;
-    touch-action: manipulation;
 }
-
-/* Styles for hover and focus-visible states */
-.step:hover,
-.step:focus-visible {
-    /* Reduce corner size and change outline color */
-    --_p: 0px;
-    outline-color: var(--color);
-    outline-offset: .05em;
-}
-
-/* Styles for active state (when clicked) */
-.step:active {
-    background: #02271f; /* Change background color */
-    color: #fff; /* Change text color */
-}
-
-
-
-
 
 .corners {
     background-color: #02271f;
