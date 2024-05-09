@@ -130,14 +130,7 @@ body{
 
 
 
-.Vdotted {
-    border-width: 0;
-    margin-left: 150px;
-    height: 100%;
-    background-image: repeating-linear-gradient(0deg, transparent, transparent 6px, #9abbb3 4px, #9abbb3 10px);
-    width: 2px;
-    text-align: center;
-}
+
 
 .Vline{
     border-width: 0;
@@ -216,17 +209,6 @@ body{
     height: 4px; /* Dot height */
     border-radius: 50%; /* Make dots round */
     opacity: 0; /* Initially invisible */
-}
-
-.hidden-group {
-    display: none; /* Initially hide the group */
-    z-index: 2;
-    
-}
-
-.visible {
-    display: flex !important; /* Ensure visibility overrides */
-    flex-direction: column;
 }
 
 

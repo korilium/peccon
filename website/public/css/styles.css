@@ -8,6 +8,7 @@
 
 body {
     font-family: Helvetica, Arial, Sans-Serif;
+    font-size: 19px;
   }
 
 .page {
@@ -145,4 +146,22 @@ ul {
 .step:active {
     background: #02271f; /* Change background color */
     color: #fff; /* Change text color */
+}
+
+#dot-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Cover entire viewport horizontally */
+    height: 100vh; /* Cover entire viewport vertically */
+    z-index: -1; /* Ensure dots are behind other content */
+}
+
+.dot {
+    position: absolute;
+    background-color: #9abbb3;/* Dot color */
+    width: 4px; /* Dot width */
+    height: 4px; /* Dot height */
+    border-radius: 50%; /* Make dots round */
+    opacity: 0; /* Initially invisible */
 }
