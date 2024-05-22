@@ -1,2 +1,4 @@
 [deps]
+Debugger = "31a5f54b-26ea-5ae9-a837-f05ce5417438"
 Franklin = "713c75ef-9fc9-4b05-94a9-213340da978e"
+FranklinTemplates = "3a985190-f512-4703-8d38-2a7944ed5916"
