@@ -1,0 +1,87 @@
+
+
+@import "styles.css";
+
+body {
+    color: #9abbb3;
+    clear: both;
+    background-color: black;
+}
+
+h1 {
+    color: #033d30;
+}
+
+h2, h3 {
+    color: #033d30;
+    float:left;
+    margin-top: 50px;
+    width: 4000px
+}
+hr {
+    border: 1px solid #033d30;
+
+}
+
+
+.description {
+    float: left;
+
+}
+
+.input {
+    float: right;
+    margin-right: -1px; /* Thank you IE */
+
+    margin-bottom: -500em;
+    width: 400px;
+}
+
+.jobs {
+    clear: both;
+   
+}
+
+.lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 190%;
+    margin: auto;
+    width: 90vw;
+  }
+  
+
+  .line:nth-child(1) {
+    margin-left: -25%;
+  }
+  .line:nth-child(1)::after {
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+  .line:nth-child(3) {
+    margin-left: 25%;
+  }
+  .line:nth-child(3)::after {
+    -webkit-animation-delay: 2.5s;
+            animation-delay: 2.5s;
+  }
+  
+  @-webkit-keyframes drop {
+    0% {
+      top: -50%;
+    }
+    100% {
+      top: 110%;
+    }
+  }
+  
+  @keyframes drop {
+    0% {
+      top: -50%;
+    }
+    100% {
+      top: 110%;
+    }
+  }
