@@ -6,38 +6,38 @@ Modern Portfolio Theory is all about minimizing the variance of the portfolio wh
 
 
 The expected return of the portfolio is calculated as follows: 
-```math 
+$$ 
 E(R_P) = \sum_iw_iE(R_i)
-```
+$$
 
 where $R_P$ is the return of the portfolio, $R_i$ is the return of the asset $i$ and $W_i$ is the weight of asset $i$ in the portfolio. The sum of the weights should be equal to $\sum_i w_i = 1$.  
 Next, we express the variance of the portfolio as follows : 
 
-```math
+$$
 \sigma^2_P  = \sum_i\sum_j w_iw_j\sigma_i\sigma_j\rho_{ij}
-```
+$$
 In matrix notation this becomes: 
 
-```math
+$$
 \sigma^2_P =  w'\Sigma w  
-``` 
+$$
 
 Remember, what we want to know is that for a given number of stocks which combinations gives us to lowest variance with the highest return. To achieve this we minimize the variance and take into account our risk-preference $P$ with respect to returns *based on some historic data*. 
 We therefore minimize the following cost function: 
 
-```math 
+$$ 
 Min(w'\Sigma w - P * E[R_p]) 
-```
+$$
 
 given the following constraints: 
 
-```math
+$$
  w_1 + w_2 + ... + w_{n-1} + w_{n} =1
-```
+$$
 
-```math
+$$
  0> w_i > 1  
-```
+$$
 
 We solve this optimal design problem using the [Interior point Newton algorithm](https://en.wikipedia.org/wiki/Interior-point_method) from the [Optim.jl package](https://julianlsolvers.github.io/Optim.jl/stable/#)
 
@@ -49,13 +49,15 @@ The upward-sloped portion of the hyperbola is the efficient frontier. It reflect
  ![risk](images/efficient_frontier.png) 
 
 
+
+
 ### Sharp ratio 
 We can use the sharp ratio to see how well the return of the portfolio/asset compensates you for the risk that you take. The sharp ratio does however not take into account all risks involved and has the same limitations as the MPT (see subsection limitations). 
 
 
-```math 
+$$ 
  S_P = \frac{E[R_P - R_{b}]}{\sigma_P} 
-``` 
+$$
 
 where $R_b$ is the return of the baseline "risk-free" product. 
 ### Limitations 
