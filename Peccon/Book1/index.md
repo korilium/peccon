@@ -33,3 +33,5 @@ julia> data_alpha(Tickers, 252, "your_API_key")
 Before we delve into specific tools, I will dedicate the first part to understanding fundamental concepts like interest rate, inflation and variance. These concepts are needed as they enable you to fully comprehend the basic implications of each tool. Then we delve in the theoretical aspect of each tool to subsequently see the implementation in the Peccon.jl.  Lastly, you can find an API explaining each and every function in Peccon.jl.
 
 
+~~~     <script src="js/background.js"></script> ~~~
+
