@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #9abbb3;
+    color: #afcac4;
 
 }
 
@@ -14,6 +14,11 @@ body {
 .page {
     width: 1200px;
     margin: 0 auto;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    color: #559e8e;
 }
 
 a:link,

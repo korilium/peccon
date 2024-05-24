@@ -9,8 +9,8 @@ body{
 
 .person {
     position: relative;
-    left: 400px;
-    height: 500px;
+    left: 500px;
+    height: 200px;
     display: flex;
     justify-content: center;
 }
