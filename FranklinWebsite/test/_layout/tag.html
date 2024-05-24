@@ -3,16 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/Peccon/Book1/__site/css/franklin.css">
-  <link rel="stylesheet" href="/Peccon/Book1/__site/css/basic.css">
+  {{insert style.html}}
   <title>Tag: {{fill fd_tag}}</title>
 </head>
 <body>
-  {{insert header.html}}
+  {{insert sidebar.html}}
   <div class="{{div_content}}">
     <h1>Tag: {{fill fd_tag}}</h1>
     {{taglist}}
     {{insert page_foot.html}}
   </div>
+  <!-- close what is opened in sidebar.html -->
+    </div>  <!-- div: content container -->
+  </div> <!-- wrap -->
 </body>
 </html>

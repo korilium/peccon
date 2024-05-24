@@ -8,6 +8,6 @@ Pkg.activate("/home/korilium/Documents/GitHub/peccon/")
 using FranklinTemplates: newsite
 using Franklin, FranklinTemplates
 
-
-cd("FranklinWebsite/TestWebsite")
+# newsite("test", template= "lanyon")
+cd("FranklinWebsite/test")
 serve()

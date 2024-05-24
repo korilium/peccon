@@ -5,13 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {{if hasmath}} {{insert head_katex.html }}     {{end}}
   {{if hascode}} {{insert head_highlight.html }}   {{end}}
-  <link rel="stylesheet" href="/Peccon/Book1/__site/css/franklin.css">
-  <link rel="stylesheet" href="/Peccon/Book1/__site/css/basic.css">
-  <link rel="stylesheet" href="/Peccon/Book1/__site/css/styles_home.css">
-  <link rel="icon" href="/Peccon/Book1/__site/assets/favicon.png">
+  {{insert style.html}}
   {{isdef title}} <title>{{fill title}}</title>  {{end}}
 </head>
 <body>
-  {{insert header.html}}
-
+{{insert sidebar.html}}
 <!-- Content appended here -->
