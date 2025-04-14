@@ -2,3 +2,5 @@
 Debugger = "31a5f54b-26ea-5ae9-a837-f05ce5417438"
 Franklin = "713c75ef-9fc9-4b05-94a9-213340da978e"
 FranklinTemplates = "3a985190-f512-4703-8d38-2a7944ed5916"
+Peccon = "f5b9415a-ee94-4c1d-9f36-779b616d2866"
+StatsPlots = "f3b207a7-027a-5e70-b257-86293d7955fd"

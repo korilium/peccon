@@ -74,7 +74,7 @@ a:hover {
 .menu {
     background-color: transparent;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     margin-top: 50px;
 }
 
