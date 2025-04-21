@@ -7,72 +7,52 @@ body{
 }
 
 
-.person {
-    position: relative;
-    left: 500px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-}
+
 
 .intro_text {
     height: fit-content;
     text-align: center;
-    font-size: 26px;
     position: relative;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically align content */
+    justify-content: center; /* Center the text */
+    gap: 10px; /* Add spacing between the pseudo-element and text */
 }
 
 .intro_text:before {
     content: "";
     display: block;
-    width: 40px;
+    width: 10%; /* Adjust width as needed */
     height: 2px;
-    top: 50%;
-    left: 33%;
     background: #9abbb3;
-    position: absolute;
+    position: relative; /* Position relative to the flex container */
+    flex-shrink: 0; /* Prevent shrinking */
 }
 
 .intro_text:after {
     content: " ";
     display: block;
-    width: 40px;
+    width: 10%; /* Adjust width as needed */
     height: 2px;
-    top: 50%;
-    right: 33%;
     background: #9abbb3;
-    position: absolute;
+    position: relative; /* Position relative to the flex container */
+    flex-shrink: 0; /* Prevent shrinking */
 }
 
 .journey {
-    margin-top: 5px;
-    display: flex;
-    flex-flow: wrap row;
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: flex-start;
-    flex-direction: row;
+    margin-top: 10%;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center elements horizontally */
+    justify-content: center; /* Center elements vertically */
+    height: auto; /* Adjust height as needed */
+    flex-direction: row; /* Align items in a row */
+    gap: 20px; /* Add spacing between items */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
 }
-
 .step {
-    margin-left: 44%;
     height: 100px;
-    width:150px
+    width:40%;
 
-}
-
-.connector {
-    margin-left: 100px;
-    margin-right: 600px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100% 100%, auto;
-    height: 100px;
-    width: 850px;
-    flex: 0 0 42%;
-    display: flex;
-    align-items: center;
-    z-index:2;
 }
 
 

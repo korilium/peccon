@@ -5,11 +5,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Peccon</title>
-    <link rel="stylesheet" href="css/styles_home.css" />
+    <link rel="stylesheet" href="css/styles_index.css" />
     <link rel="icon" href="img/favicon.svg">
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".side-menu">
+<body id="page-top">
     <div id="dot-container"></div>
     <div class='header'>
         <img class="logo" src="img/logoBackground.svg" alt="peccon logo">
@@ -21,23 +21,11 @@
             <li><a href="products.html">Products</a></li>
             <li> <a href="about.html"> About</a></li>
         </ul>
-        <div class="wallet">
-            <button id="connect-wallet">Connect Wallet</button>
-            <script>
-                document.getElementById("connect-wallet").onclick = async () => {
-                    try {
-                        const nami = await window.cardano.nami.enable();
-                        alert("Wallet connected!");
-                    } catch (error) {
-                        console.error("Error connecting wallet:", error);
-                    }
-                };
-            </script>
-        </div>
     </div>
     <div class="page">
         <div class="content">
             <img class="person" src="img/logosmall.svg" alt="icon of consumer">
+        </div>
             <div class="intro_text"> Start your journey here </div>
             <div class="introduction">
                 <div class="connector">
@@ -95,10 +83,10 @@
 
                 </div>
             </div>
-        </div>
 
         <script src="js/background.js"></script>
         <script src="js/appear.js"></script>
+        <script src="js/wallet.js"></script>
 
 </body>
 
