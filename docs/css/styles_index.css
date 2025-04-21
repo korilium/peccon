@@ -44,34 +44,42 @@ body{
     display: flex;
     flex-direction: column; /* Arrange items in a column */
     justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
+    align-content: space-between; /* Center content horizontally */
     gap: 20px; /* Add spacing between elements */
     text-align: center; /* Center text inside elements */
 }
 
+.stepContainer {
+    display: flex;
+    flex-direction: row; /* Arrange items in a row */
+    align-items: center; /* Center content vertically */
+    gap: 20px; /* Add spacing between elements */
+    margin-top: 40px;
 
+}
 
 .step {
-    margin-left: 100px;
     height: fit-content;
     text-align: center;
     position: relative;
-    width: 130px;
+
+    min-width: fit-content;
 
 }
 
 .corners {
-    background-color: #02271f;
-    border: 3px solid ;
-    margin-left: 0px;
-    text-align: center;
-    height: 140px;
-    float: left;
-    width: 450px;
-    z-index: 3;
-    padding: 60px 0;
+    background-color: #02271f; /* Dark green background */
+    border: 3px solid #9abbb3; /* Add a border color for better visibility */
+    margin: 0 auto; /* Center horizontally if applicable */
+    text-align: center; /* Center text inside the element */
+    height: auto; /* Allow height to adjust dynamically */
+    float: none; /* Remove float for better layout control */
+    width: 90%;
+    z-index: 3; /* Ensure proper stacking order */
+    padding: 20px 40px; /* Adjust padding for better spacing */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
 }
-
 
 
 
