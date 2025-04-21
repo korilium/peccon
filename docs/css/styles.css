@@ -19,6 +19,7 @@ body {
 .page {
     width: 100%;
     margin: 0 auto;
+    
 }
 
 
@@ -28,20 +29,21 @@ h1, h2, h3, h4, h5, h6 {
 
 a:link,
 a:visited {
-    color: #04f3bfb9;
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
+    text-underline-offset: 3px;
 }
 
 .header {
     position: relative;
-    padding: 2%;
+    padding: 10px;
+    padding-right: 5%;
     height: 100px;
     width: 100%;
-    background-image: linear-gradient(180deg, #033d30, transparent);
+    background-color: rgba(3, 61, 48, 0.8); /* Semi-transparent background */
     display: flex;
     flex-flow: wrap row;
     flex-direction: row;
@@ -52,11 +54,9 @@ a:hover {
 }
 
 .logo {
-    height: auto;
+    height: 80%;
     min-height: 40%;
-    max-height: 80%;
-    width: 40%;
-    margin-top: 10px;
+    width: 50%;
     float: none;
     flex-basis:10%;
     z-index: 5;
@@ -67,7 +67,6 @@ a:hover {
     background-color: #033d30;
     font-size: clamp(20px, 2vw, 22px);
     font-family: serif;
-    margin-top: 15px;
     margin-right: auto;
     background: linear-gradient(90deg, rgb(254, 185, 48), #9abbb3);
     background-clip: text;
@@ -83,7 +82,10 @@ a:hover {
     justify-content: center;
     align-items: center;
     min-width: fit-content;
-    
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    gap: 5%;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effects */
+    margin-right: 5%;
 }
 
 ul {
@@ -96,6 +98,14 @@ ul {
     padding: 0 10px; /* Add padding for better spacing */
     font-size: clamp(14px, 2vw, 22px);
     background-color: transparent;
+    transition: color 0.3s ease, transform 0.3s ease; /* Add hover effects */
+    border-radius: 4px; /* Add rounded corners */
+    padding: 2%; /* Add padding for better spacing */
+
+}
+.menu > li > a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px; /* Ensure the underline is slightly lower */
 }
 
 
