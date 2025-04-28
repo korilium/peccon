@@ -1,0 +1,54 @@
+
+@import "styles.css";
+
+
+body{
+    background-color: black;
+}
+
+
+.intro_text {
+    height: fit-content;
+    text-align: center;
+    position: relative;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically align content */
+    justify-content: center; /* Center the text */
+    gap: 10px; /* Add spacing between the pseudo-element and text */
+}
+
+.intro_text:before {
+    content: "";
+    display: block;
+    width: 10%; /* Adjust width as needed */
+    height: 2px;
+    background: #9abbb3;
+    position: relative; /* Position relative to the flex container */
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+.intro_text:after {
+    content: " ";
+    display: block;
+    width: 10%; /* Adjust width as needed */
+    height: 2px;
+    background: #9abbb3;
+    position: relative; /* Position relative to the flex container */
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+.journey {
+    margin-top: 10%;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center elements horizontally */
+    justify-content: center; /* Center elements vertically */
+    height: auto; /* Adjust height as needed */
+    flex-direction: row; /* Align items in a row */
+    gap: 20px; /* Add spacing between items */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+.step {
+    height: 100px;
+    width:40%;
+
+}

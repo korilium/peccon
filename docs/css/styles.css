@@ -53,10 +53,19 @@ a:hover {
     align-items: center;
 }
 
-.logo {
-    height: 80%;
+.logoRef {
+    height: 100%;
     min-height: 40%;
-    width: 50%;
+    width: 100%;
+    float: none;
+    flex-basis:10%;
+    z-index: 5;
+    background-color: transparent;
+}
+.logo {
+    height: 100%;
+    min-height: 40%;
+    width: 100%;
     float: none;
     flex-basis:10%;
     z-index: 5;

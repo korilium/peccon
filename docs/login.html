@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Peccon</title>
-    <link rel="stylesheet" href="css/styles_products.css" />
+    <link rel="stylesheet" href="css/styles_about.css" />
     <link rel="icon" href="img/favicon.svg">
 </head>
 
@@ -27,14 +27,21 @@
     </div>
     <div class="page">
         <div class="content">
-            <img class="person" src="img/logoBackground.svg" alt="icon of intelligent consumer">
+            <a href="index.html">
+                <img class="person" src="img/logo.svg" alt="icon of intelligent consumer">
+            </a>
         </div>
-        <div class="intro_text"> Invest in community products</div>
-        <div class="journey">
-
+        <form action="login.html" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Password" required>
+            <input type="submit" value="Login">
+            <p>Don't have an account? <a href="register.html">Register here</a></p>
+            <p>Forgot your password? <a href="reset_password.html">Reset it here</a></p>
+        </form>
     </div>
     </div>
-    
     <script src="js/background.js"></script>
 </body>
 

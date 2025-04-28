@@ -44,7 +44,7 @@ body{
     display: flex;
     flex-direction: column; /* Arrange items in a column */
     justify-content: center; /* Center content vertically */
-    align-content: space-between; /* Center content horizontally */
+    align-content:flex-start; /* Center content horizontally */
     gap: 20px; /* Add spacing between elements */
     text-align: center; /* Center text inside elements */
 }
@@ -63,7 +63,7 @@ body{
     text-align: center;
     position: relative;
 
-    min-width: fit-content;
+    min-width: 125px; /* Set a minimum width for the step */
 
 }
 
