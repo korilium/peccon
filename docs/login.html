@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Peccon</title>
-    <link rel="stylesheet" href="css/styles_about.css" />
+    <link rel="stylesheet" href="css/styles_login.css" />
     <link rel="icon" href="img/favicon.svg">
 </head>
 
@@ -31,16 +31,17 @@
                 <img class="person" src="img/logo.svg" alt="icon of intelligent consumer">
             </a>
         </div>
-        <form action="login.html" method="post">
-            <label for="username">Username:</label>
-            <input type="text" id="username" placeholder="Username" required>
-            <label for="password">Password:</label>
-            <input type="password" id="password" placeholder="Password" required>
-            <input type="submit" value="Login">
-            <p>Don't have an account? <a href="register.html">Register here</a></p>
-            <p>Forgot your password? <a href="reset_password.html">Reset it here</a></p>
-        </form>
-    </div>
+        <fieldset>
+            <form action="login.html" method="post">
+                <label for="username">Email:</label>
+                <input type="email" id="email" placeholder="Email" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Password" required>
+                <input type="submit" value="Login">
+                <p>Don't have an account? <a href="register.html">Register here</a></p>
+                <p>Forgot your password? <a href="reset_password.html">Reset it here</a></p>
+            </form>
+        </fieldset>
     </div>
     <script src="js/background.js"></script>
 </body>

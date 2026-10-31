@@ -71,6 +71,47 @@ body{
     z-index:2;
 }
 
+#email {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%, auto;
+    min-width: 200px;
+    flex: 0 0 42%;
+    display: flex;
+    align-items: center;
+}
+#email:focus {
+    outline: none;
+    border: 2px solid #9abbb3;
+    box-shadow: 0 0 5px rgba(154, 187, 179, 0.5);
+}
+#email::placeholder {
+    color: #9abbb3;
+    opacity: 0.7; /* Adjust opacity for placeholder text */
+}
 
+
+#password {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%, auto;
+    min-width: 200px;
+    flex: 0 0 42%;
+    display: flex;
+    align-items: center;
+}
+#password:focus {
+    outline: none;
+    border: 2px solid #9abbb3;
+    box-shadow: 0 0 5px rgba(154, 187, 179, 0.5);
+}
+#password::placeholder {
+    color: #9abbb3;
+    opacity: 0.7; /* Adjust opacity for placeholder text */
+}
+#password:focus::placeholder {
+    color: #9abbb3;
+    opacity: 0.5; /* Adjust opacity for placeholder text */
+}
 
 
